@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  app:
+    image: image-test
+    build:
+      context: .
+    environment:
+      BASE_URL: ${BASE_URL}
+      DIFF_URL: ${DIFF_URL}
+    volumes:
+      - ./dist:/app/dist
+      - ./src:/app/src
