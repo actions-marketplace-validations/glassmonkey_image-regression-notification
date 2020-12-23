@@ -36,7 +36,10 @@ RUN wget https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.z
 
 ENV WINDOW_SIZE "1024,768"
 ENV BASE_URL ""
-ENV DIFF_URL ""
+ENV COMPARE_URL ""
+ENV SLACK_TOKEN ""
+ENV SLACK_CHANNEL ""
+
 
 WORKDIR /app
 
