@@ -1,12 +1,9 @@
 name: Build and Publish Docker
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
-  build_and_push:
+  publish:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: image-regression-notification
