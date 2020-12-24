@@ -1,0 +1,36 @@
+name: 'Image Regression Notification'
+description: 'GitHub Actions for simple image regression testing and slack notifications.'
+author: 'glassmonkey'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    BASE_URL: ${{ inputs.BASE_URL }}
+    COMPARE_URL: ${{ inputs.COMPARE_URL }}
+    SLACK_TOKEN: ${{ inputs.SLACK_TOKEN }}
+    SLACK_CHANNEL: ${{ inputs.SLACK_CHANNEL }}
+    ENABLE_SHOW_DIFF: ${{ inputs.ENABLE_SHOW_DIFF }}
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
+inputs:
+  BASE_URL:
+    description: This is the original URL for the image regression tests
+    required: true
+    default: ""
+  COMPARE_URL:
+    description: This is the URL to compare the image regression tests
+    required: true
+    default: ""
+  SLACK_TOKEN:
+    description: This is the token for Slack Application. See https://api.slack.com/methods/files.upload#arg_token
+    required: true
+    default: ""
+  SLACK_CHANNEL:
+    description: This is the channel name in Slack.
+    required: true
+    default: ""
+  ENABLE_SHOW_DIFF:
+    description: This is the URL to compare the image regression tests
+    required: false
+    default:  "YES"
