@@ -1,0 +1,17 @@
+name: Sample WorkFlow
+# push をトリガーとしてワークフローを実行
+on: [push]
+
+# ジョブを定義：ジョブは並列処理される（デフォルト動作）
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          BASE_URL: https://ore-timer.xyz/
+          COMPARE_URL: https://stage-ore-timer.netlify.app/
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+          ENABLE_SHOW_DIFF: false
