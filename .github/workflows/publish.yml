@@ -18,5 +18,6 @@ jobs:
           password: ${{ secrets.PAT_TOKEN }}
       - name: Push to GitHub Container Registry
         uses: docker/build-push-action@v2
-        push: true
-        tags: glassmonkey/image-regression-notification:latest
+        with:
+          push: true
+          tags: glassmonkey/image-regression-notification:latest
