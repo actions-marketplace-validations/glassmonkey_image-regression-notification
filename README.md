@@ -14,7 +14,7 @@ The image differences is surrounded by a red rectangle.
 
 ## usage
 ```yaml
-- uses: glassmonkey/image-regression-notification@v1
+- uses: glassmonkey/image-regression-notification@v1.1
   with:
     BASE_URL: https://example.com
     COMPARE_URL: https://test.example.com
