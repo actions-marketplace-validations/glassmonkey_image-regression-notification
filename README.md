@@ -21,4 +21,4 @@ The image differences is surrounded by a red rectangle.
     SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
     SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
     ENABLE_SHOW_DIFF: false
-```mo
+```
