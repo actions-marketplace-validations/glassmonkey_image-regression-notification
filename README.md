@@ -6,7 +6,7 @@ This action will test the image regression between the two specified URLs(`BASE_
 
 ## usage
 ```yaml
-- uses: ./
+- uses: glassmonkey/image-regression-notification@v1
   with:
     BASE_URL: https://example.com
     COMPARE_URL: https://test.example.com
