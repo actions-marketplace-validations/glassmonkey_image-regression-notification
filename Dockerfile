@@ -48,4 +48,4 @@ RUN pip install -r requirements.txt
 
 COPY src/main.py src
 
-CMD ["python", "src/main.py"]
+CMD ["python", "/app/src/main.py"]
