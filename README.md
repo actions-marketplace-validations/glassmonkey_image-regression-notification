@@ -2,7 +2,7 @@
 
 ## description
 
-This action will test the image regression between the two specified URLs(`BASE_URL`, `COMPARE_URL`)
+This action test the image regression between the two specified URLs(`BASE_URL`, `COMPARE_URL`) and report testing image to slack.
 
 ## usage
 ```yaml
