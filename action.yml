@@ -3,7 +3,7 @@ description: 'GitHub Actions for simple image regression testing and slack notif
 author: 'glassmonkey'
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/glassmonkey/image-regression-notification:main'
+  image: 'docker://ghcr.io/glassmonkey/image-regression-notification:latest'
   env:
     BASE_URL: ${{ inputs.BASE_URL }}
     COMPARE_URL: ${{ inputs.COMPARE_URL }}
